@@ -14,6 +14,7 @@ public class AccountPage extends BasePage {
         WebElement logoutElement = waitAndReturnElement(logoutButton);
         logoutElement.click();
 
+        WebDriverWait wait = new WebDriverWait(this.driver, 1);
         WebElement confirmLogoutElement = wait
                 .until(ExpectedConditions.visibilityOfElementLocated(confirmLogoutButton));
         confirmLogoutElement.click();

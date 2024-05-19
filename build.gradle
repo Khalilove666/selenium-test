@@ -25,3 +25,8 @@ sourceSets {
         }
     }
 }
+
+// Set encoding for Java compilation  --Hungarian characters
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
